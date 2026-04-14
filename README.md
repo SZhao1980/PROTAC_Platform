@@ -1,6 +1,10 @@
 # PROTAC_Platform
 This project implements an AI-powered PROTAC (Proteolysis Targeting Chimeras) discovery platform using machine learning and graph neural networks for predicting PROTAC activity and designing novel degraders.
 
+A machine learning-based framework for predicting PROTAC degradation activity using molecular descriptors and structural features.
+
+This project integrates data preprocessing, statistical analysis, and predictive modeling to explore structure–activity relationships in PROTAC compounds.
+
 ## Project Structure
 
 ```
@@ -79,3 +83,9 @@ PROTAC_AI_Platform/
 5. Target Distribution - Top 15 target proteins
 6. E3 Ligase Distribution - Top 10 E3 ligases
 7. Confusion Matrices - Classification performance
+
+## Reference
+
+**Title:** _Machine Learning-Driven Prediction of PROTAC Degradation Activity: A Large-Scale Structural and Molecular Property Analysis_
+**Author:** Sai Zhao、Yuxuan Wu、Yuanzhen Cai
+**Email:** [z_s_1980@hotmail.com](mailto:z_s_1980@hotmail.com)
