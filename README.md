@@ -84,8 +84,10 @@ PROTAC_AI_Platform/
 6. E3 Ligase Distribution - Top 10 E3 ligases
 7. Confusion Matrices - Classification performance
 
-## Reference
+## Citation
 
 **Title:** _Machine Learning-Driven Prediction of PROTAC Degradation Activity: A Large-Scale Structural and Molecular Property Analysis_
+
 **Author:** Sai Zhao、Yuxuan Wu、Yuanzhen Cai
+
 **Email:** [z_s_1980@hotmail.com](mailto:z_s_1980@hotmail.com)
