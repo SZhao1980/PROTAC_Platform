@@ -1,0 +1,54 @@
+2026-01-30 10:10:13,081 - INFO - Loading data...
+2026-01-30 10:10:13,130 - INFO - 
+Generating visualizations...
+2026-01-30 10:10:13,130 - INFO - Plotting ROC curves...
+2026-01-30 10:10:13,894 - INFO - Saved ROC curves to results/roc_curves.png
+2026-01-30 10:10:13,895 - INFO - Plotting confusion matrices...
+2026-01-30 10:10:14,370 - INFO - Saved confusion matrices to results/confusion_matrices.png
+2026-01-30 10:10:14,370 - INFO - Plotting model comparison...
+2026-01-30 10:10:15,421 - INFO - Saved model comparison to results/model_comparison.png
+2026-01-30 10:10:15,421 - INFO - Plotting descriptor distributions...
+2026-01-30 10:10:17,863 - INFO - Saved descriptor distributions to results/descriptor_distribution.png
+2026-01-30 10:10:17,863 - INFO - Plotting prediction distributions...
+2026-01-30 10:10:18,531 - INFO - Saved prediction distribution to results/prediction_distribution.png
+2026-01-30 10:10:18,532 - INFO - Plotting target distribution...
+2026-01-30 10:10:19,181 - INFO - Saved target distribution to results/target_distribution.png
+2026-01-30 10:10:19,181 - INFO - Plotting E3 ligase distribution...
+2026-01-30 10:10:19,735 - INFO - Saved E3 ligase distribution to results/e3_ligase_distribution.png
+2026-01-30 10:10:19,735 - INFO - Generating summary report...
+2026-01-30 10:10:19,747 - INFO - Saved report to results/analysis_report.txt
+2026-01-30 10:10:19,747 - INFO - 
+Analysis and visualization completed!
+
+================================================================================
+PROTAC ACTIVITY PREDICTION - COMPREHENSIVE ANALYSIS REPORT
+================================================================================
+
+DATASET STATISTICS
+--------------------------------------------------------------------------------
+Total Compounds: 10583
+Active Compounds: 10192 (96.3%)
+Inactive Compounds: 391 (3.7%)
+Unique Targets: 521
+Unique E3 Ligases: 25
+
+MOLECULAR PROPERTIES (Mean ± Std)
+--------------------------------------------------------------------------------
+MW             :   946.68 ± 171.98
+LogP           :     5.42 ±   2.37
+TPSA           :   215.62 ±  44.60
+HBA            :    13.40 ±   3.01
+HBD            :     4.33 ±   1.67
+RotBonds       :    18.72 ±   6.45
+
+MODEL PERFORMANCE
+--------------------------------------------------------------------------------
+           Model  Train_AUC  Val_AUC  Test_AUC  Test_Accuracy  Test_F1  Test_Precision  Test_Recall
+    RandomForest   0.976387 0.790719  0.789175       0.951511 0.975153        0.953312     0.998018
+GradientBoosting   0.971062 0.767894  0.735165       0.949622 0.974144        0.953797     0.995376
+
+Best Model: RandomForest
+Test AUC: 0.7892
+Test Accuracy: 0.9515
+Test F1 Score: 0.9752
+

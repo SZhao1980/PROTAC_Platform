@@ -1,0 +1,31 @@
+================================================================================
+PROTAC ACTIVITY PREDICTION - COMPREHENSIVE ANALYSIS REPORT
+================================================================================
+
+DATASET STATISTICS
+--------------------------------------------------------------------------------
+Total Compounds: 10583
+Active Compounds: 10192 (96.3%)
+Inactive Compounds: 391 (3.7%)
+Unique Targets: 521
+Unique E3 Ligases: 25
+
+MOLECULAR PROPERTIES (Mean ± Std)
+--------------------------------------------------------------------------------
+MW             :   946.68 ± 171.98
+LogP           :     5.42 ±   2.37
+TPSA           :   215.62 ±  44.60
+HBA            :    13.40 ±   3.01
+HBD            :     4.33 ±   1.67
+RotBonds       :    18.72 ±   6.45
+
+MODEL PERFORMANCE
+--------------------------------------------------------------------------------
+           Model  Train_AUC  Val_AUC  Test_AUC  Test_Accuracy  Test_F1  Test_Precision  Test_Recall
+    RandomForest   0.976387 0.790719  0.789175       0.951511 0.975153        0.953312     0.998018
+GradientBoosting   0.971062 0.767894  0.735165       0.949622 0.974144        0.953797     0.995376
+
+Best Model: RandomForest
+Test AUC: 0.7892
+Test Accuracy: 0.9515
+Test F1 Score: 0.9752

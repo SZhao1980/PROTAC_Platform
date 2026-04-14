@@ -1,0 +1,48 @@
+2026-01-30 10:04:49,741 - INFO - Starting PROTAC data preprocessing...
+2026-01-30 10:04:49,741 - INFO - Loading PROTAC-DB data...
+2026-01-30 10:04:49,878 - INFO - Loaded 9380 records from PROTAC-DB
+2026-01-30 10:04:49,878 - INFO - Loading PROTACpedia data...
+2026-01-30 10:04:49,892 - INFO - Loaded 1203 records from PROTACpedia
+2026-01-30 10:04:49,892 - INFO - Preprocessing PROTAC-DB data...
+2026-01-30 10:04:49,919 - INFO - After removing missing SMILES: 9380 records
+2026-01-30 10:04:49,925 - INFO - Calculating molecular properties...
+2026-01-30 10:04:49,925 - INFO - Processing molecule 0/9380
+2026-01-30 10:04:51,557 - INFO - Processing molecule 1000/9380
+2026-01-30 10:04:53,075 - INFO - Processing molecule 2000/9380
+2026-01-30 10:04:54,651 - INFO - Processing molecule 3000/9380
+2026-01-30 10:04:56,258 - INFO - Processing molecule 4000/9380
+2026-01-30 10:04:57,796 - INFO - Processing molecule 5000/9380
+2026-01-30 10:04:59,291 - INFO - Processing molecule 6000/9380
+2026-01-30 10:05:00,780 - INFO - Processing molecule 7000/9380
+2026-01-30 10:05:02,243 - INFO - Processing molecule 8000/9380
+2026-01-30 10:05:03,791 - INFO - Processing molecule 9000/9380
+2026-01-30 10:05:04,364 - INFO - After property calculation: 9380 records
+2026-01-30 10:05:04,370 - INFO - Preprocessing PROTACpedia data...
+2026-01-30 10:05:04,373 - INFO - After removing missing SMILES: 1203 records
+2026-01-30 10:05:04,377 - INFO - Calculating molecular properties...
+2026-01-30 10:05:04,377 - INFO - Processing molecule 0/1203
+2026-01-30 10:05:04,573 - INFO - Processing molecule 100/1203
+2026-01-30 10:05:04,738 - INFO - Processing molecule 200/1203
+2026-01-30 10:05:04,896 - INFO - Processing molecule 300/1203
+2026-01-30 10:05:05,048 - INFO - Processing molecule 400/1203
+2026-01-30 10:05:05,210 - INFO - Processing molecule 500/1203
+2026-01-30 10:05:05,373 - INFO - Processing molecule 600/1203
+2026-01-30 10:05:05,538 - INFO - Processing molecule 700/1203
+2026-01-30 10:05:05,673 - INFO - Processing molecule 800/1203
+2026-01-30 10:05:05,831 - INFO - Processing molecule 900/1203
+2026-01-30 10:05:05,980 - INFO - Processing molecule 1000/1203
+2026-01-30 10:05:06,134 - INFO - Processing molecule 1100/1203
+2026-01-30 10:05:06,296 - INFO - Processing molecule 1200/1203
+2026-01-30 10:05:06,308 - INFO - After property calculation: 1203 records
+2026-01-30 10:05:06,309 - INFO - Merging datasets...
+2026-01-30 10:05:06,314 - INFO - Merged dataset contains 10583 records
+2026-01-30 10:05:06,314 - INFO - Splitting dataset...
+2026-01-30 10:05:06,317 - INFO - Train: 7408, Val: 1587, Test: 1588
+2026-01-30 10:05:06,317 - INFO - Saving processed data...
+2026-01-30 10:05:06,576 - INFO - Saved train data to data/processed/train_data.csv
+2026-01-30 10:05:06,576 - INFO - Saved val data to data/processed/val_data.csv
+2026-01-30 10:05:06,576 - INFO - Saved test data to data/processed/test_data.csv
+2026-01-30 10:05:06,576 - INFO - Saved merged data to data/processed/merged_data.csv
+2026-01-30 10:05:06,576 - INFO - Generating statistics...
+2026-01-30 10:05:06,580 - INFO - Dataset Statistics: {'Total_Records': 10583, 'Active_Compounds': np.int64(10192), 'Inactive_Compounds': np.int64(391), 'Avg_MW': 946.6842725125199, 'Avg_LogP': 5.419897924029108, 'Avg_TPSA': 215.61938297269202, 'Unique_Targets': 521, 'Unique_E3_Ligases': 25}
+2026-01-30 10:05:06,580 - INFO - Preprocessing completed successfully!

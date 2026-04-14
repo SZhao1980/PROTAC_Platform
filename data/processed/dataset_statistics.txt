@@ -1,0 +1,8 @@
+Total_Records: 10583
+Active_Compounds: 10192
+Inactive_Compounds: 391
+Avg_MW: 946.6842725125199
+Avg_LogP: 5.419897924029108
+Avg_TPSA: 215.61938297269202
+Unique_Targets: 521
+Unique_E3_Ligases: 25

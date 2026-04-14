@@ -1,0 +1,59 @@
+2026-01-30 10:09:11,585 - INFO - Loading data...
+2026-01-30 10:09:11,623 - INFO - 
+Preparing training features...
+2026-01-30 10:09:11,624 - INFO - Calculating descriptors for 7408 molecules...
+2026-01-30 10:09:11,624 - INFO - Processing molecule 0/7408
+2026-01-30 10:09:13,366 - INFO - Processing molecule 1000/7408
+2026-01-30 10:09:15,161 - INFO - Processing molecule 2000/7408
+2026-01-30 10:09:16,947 - INFO - Processing molecule 3000/7408
+2026-01-30 10:09:18,699 - INFO - Processing molecule 4000/7408
+2026-01-30 10:09:20,277 - INFO - Processing molecule 5000/7408
+2026-01-30 10:09:21,868 - INFO - Processing molecule 6000/7408
+2026-01-30 10:09:23,457 - INFO - Processing molecule 7000/7408
+2026-01-30 10:09:24,087 - INFO - Failed to process 0 molecules
+2026-01-30 10:09:24,107 - INFO - Successfully calculated descriptors for 7408 molecules
+2026-01-30 10:09:24,109 - INFO - 
+Preparing validation features...
+2026-01-30 10:09:24,110 - INFO - Calculating descriptors for 1587 molecules...
+2026-01-30 10:09:24,110 - INFO - Processing molecule 0/1587
+2026-01-30 10:09:25,767 - INFO - Processing molecule 1000/1587
+2026-01-30 10:09:26,699 - INFO - Failed to process 0 molecules
+2026-01-30 10:09:26,704 - INFO - Successfully calculated descriptors for 1587 molecules
+2026-01-30 10:09:26,705 - INFO - 
+Preparing test features...
+2026-01-30 10:09:26,705 - INFO - Calculating descriptors for 1588 molecules...
+2026-01-30 10:09:26,705 - INFO - Processing molecule 0/1588
+2026-01-30 10:09:28,312 - INFO - Processing molecule 1000/1588
+2026-01-30 10:09:29,254 - INFO - Failed to process 0 molecules
+2026-01-30 10:09:29,259 - INFO - Successfully calculated descriptors for 1588 molecules
+2026-01-30 10:09:29,260 - INFO - 
+Scaling features...
+2026-01-30 10:09:29,263 - INFO - 
+============================================================
+2026-01-30 10:09:29,263 - INFO - Training RandomForest model...
+2026-01-30 10:09:29,263 - INFO - ============================================================
+2026-01-30 10:09:29,263 - INFO - Training...
+2026-01-30 10:09:29,830 - INFO - 
+Train - AUC: 0.9764, Accuracy: 0.9667
+2026-01-30 10:09:29,830 - INFO - Val   - AUC: 0.7907, Accuracy: 0.9578
+2026-01-30 10:09:29,830 - INFO - Test  - AUC: 0.7892, Accuracy: 0.9515, F1: 0.9752
+2026-01-30 10:09:29,836 - INFO - Model saved to models/randomforest_model.pkl
+2026-01-30 10:09:29,836 - INFO - 
+============================================================
+2026-01-30 10:09:29,836 - INFO - Training GradientBoosting model...
+2026-01-30 10:09:29,836 - INFO - ============================================================
+2026-01-30 10:09:29,836 - INFO - Training...
+2026-01-30 10:09:31,535 - INFO - 
+Train - AUC: 0.9711, Accuracy: 0.9690
+2026-01-30 10:09:31,535 - INFO - Val   - AUC: 0.7679, Accuracy: 0.9546
+2026-01-30 10:09:31,535 - INFO - Test  - AUC: 0.7352, Accuracy: 0.9496, F1: 0.9741
+2026-01-30 10:09:31,538 - INFO - Model saved to models/gradientboosting_model.pkl
+2026-01-30 10:09:31,558 - INFO - 
+Model Results:
+              Model  Train_AUC   Val_AUC  ...   Test_F1  Test_Precision  Test_Recall
+0      RandomForest   0.976387  0.790719  ...  0.975153        0.953312     0.998018
+1  GradientBoosting   0.971062  0.767894  ...  0.974144        0.953797     0.995376
+
+[2 rows x 8 columns]
+2026-01-30 10:09:31,567 - INFO - 
+Model training completed successfully!
